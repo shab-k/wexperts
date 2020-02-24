@@ -1,22 +1,41 @@
-html {
-  // @include font-size($html-font-sizes);
-}
+// html {
+//   @include font-size($html-font-sizes);
+// }
 @include media-xs {
-
+  .media__item img {
+    width: 60%;
+  }
+  
 }
 
 @include media-sm {
 
 
-
 }
 
 @include media-md {
-
-
+  .media {
+    margin: 0 0 $base-spacing*2;
+}
+.media__list--item {
+  width: 80%;
 }
 
-@include media-max-md {
+.media__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.media--object {
+  flex-wrap: wrap;
+  margin: 0 $base-spacing $base-spacing 0; //faghat male reverse?
+}
+
+.media__item--reversed {
+  order: 0;
+  margin: 0 0 $base-spacing $base-spacing;
+}
   .menu-btn {
     display: block;
   }
@@ -62,11 +81,11 @@ html {
 }
 
 @include media-lg {
-
   .container {
-    max-width: 70%;
+    max-width: 80%;
   }
-
 }
 
-@include media-xl {}
+@include media-xl {
+
+}

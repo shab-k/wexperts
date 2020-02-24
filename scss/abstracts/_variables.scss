@@ -29,14 +29,14 @@ $white: #fff;
 $color-blue: #1b232b;
 $color-red: #841313;
 $color-off-white: #EEE9E4;
-
+$color-light-blue: #7f99b3;
 $light-grey: #ededed !default;
 
 // Colors Base
 $base__accent-color: $color-blue;
 $secondary__accent-color: $color-red;
 // $base__font-color: desaturate(darken($base__accent-color, 30%), 50%);
-// $base__background-color: $color-off-white;
+$base__background-color: $color-off-white;
 $base__alert-color: mix($base__accent-color, $color-red, 50%);
 
 // Transition Settings
