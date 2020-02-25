@@ -12,9 +12,6 @@ sans-serif !default;
 // 'Monaco',
 // monospace !default;
 
-// Container's maximum width
-$max-width: 1180px !default;
-
 // Spacing
 $base-spacing: 1rem;
 
@@ -35,7 +32,7 @@ $light-grey: #ededed !default;
 // Colors Base
 $base__accent-color: $color-blue;
 $secondary__accent-color: $color-red;
-// $base__font-color: desaturate(darken($base__accent-color, 30%), 50%);
+$base__font-color: desaturate(darken($base__accent-color, 30%), 50%);
 $base__background-color: $color-off-white;
 $base__alert-color: mix($base__accent-color, $color-red, 50%);
 
@@ -44,8 +41,7 @@ $base-transition-duration: .3s;
 $base-transition-timing: ease-in-out;
 
 // Border Radius
-$base__border-radius: 0.1rem;
-// $base-border-radius: .1rem; ??
+$base__border-radius: 2rem;
 
 // Borders
 $base-border: 1px solid darken($base__background-color, 20%);
