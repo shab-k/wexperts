@@ -44,7 +44,7 @@ $base-transition-timing: ease-in-out;
 $base__border-radius: 2rem;
 
 // Borders
-$base-border: 1px solid darken($base__background-color, 20%);
+$base-border: 3px solid darken($base__accent-color, 20%);
 
 // Shadow
 $base__box-shadow: 0 2px 2px 0 rgba(black, 0.2);
