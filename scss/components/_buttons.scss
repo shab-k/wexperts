@@ -37,7 +37,8 @@ btn:focus {
 	
 	&:hover,
 	&:focus {
-		background-color: darken($base__font-color, 90%);
+		background-color: lighten($base__font-color, 90%);
+		color: $base__accent-color;
 	}
 }
 
@@ -64,7 +65,6 @@ btn:focus {
 	
 	&:hover,
 	&:focus {
-		// background-color: darken($secondary__accent-color, 10%);
 		background-color: $color-off-white;
 		// color: $base__accent-color;
     }

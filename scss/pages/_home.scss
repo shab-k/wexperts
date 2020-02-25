@@ -22,14 +22,12 @@
 .about {
     background-color: $color-pink;
     padding: 20px;
-    h2 {
-        text-align: center;
-    }
 }
 .contact {
     background-color: $color-light-blue;
     padding: 10px;
     h2 {
         text-align: center;
+        padding-top: 10px;
     }
 }
