@@ -23,16 +23,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-// a {
-//   color: $brand-color;
-//   text-decoration: none;
-//   @include on-event {
-//     color: $text-color;
-//     text-decoration: underline;
-//   }
-// }
-
 a {
   // color: $base__accent-color;
   transition: color $base-transition-duration $base-transition-timing;
