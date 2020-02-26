@@ -1,7 +1,7 @@
-@include media-xs {
- 
-  
+html{
+  @include font-size($html-font-sizes);
 }
+@include media-xs {}
 
 @include media-sm {
   .contact form {
@@ -9,11 +9,14 @@
     margin: 10px auto;
     padding: 20px;
   }
+
   .media__item img {
     width: 100%;
     height: 100%;
   }
+
   .media__body {
+    text-align: center;
     margin: 50px 0;
   }
 }
@@ -25,31 +28,35 @@
     padding: 10px;
     text-align: center;
   }
+
   .media {
     margin: 0 0 $base-spacing*2;
-}
-.media__body {
-  margin: 50px 0;
-}
-.media__list--item {
-  width: 80%;
-}
+  }
 
-.media__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  .media__body {
+    margin: 50px 0;
+  }
 
-.media--object {
-  flex-wrap: wrap;
-  margin: 0 $base-spacing $base-spacing 0; //faghat male reverse?
-}
+  .media__list--item {
+    width: 80%;
+  }
 
-.media__item--reversed {
-  order: 0;
-  margin: 0 0 $base-spacing $base-spacing;
-}
+  .media__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .media--object {
+    flex-wrap: wrap;
+    margin: 0 $base-spacing $base-spacing 0; //faghat male reverse?
+  }
+
+  .media__item--reversed {
+    order: 0;
+    margin: 0 0 $base-spacing $base-spacing;
+  }
+
   .menu-btn {
     display: block;
   }
@@ -65,7 +72,7 @@
   .main-nav ul.main-menu {
     display: block;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     background-color: $base__background-color;
     width: 50%;
@@ -98,8 +105,14 @@
   .container {
     max-width: 80%;
   }
+
+  .media__item {
+    margin: 0 $base-spacing $base-spacing 0;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
-@include media-xl {
-
-}
+@include media-xl {}
