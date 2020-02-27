@@ -52,6 +52,9 @@ btn:focus {
     &:hover a {
         color: $secondary__accent-color;
     }
+    &:active a {
+        color: $base__font-color;
+    }
     a {
         color: $color-off-white;
     }
@@ -67,6 +70,9 @@ btn:focus {
     }
     &:hover a {
         color: $base__accent-color;
+	}
+	&:active a {
+        color: $base__font-color;
     }
     a {
         color: $color-off-white;
