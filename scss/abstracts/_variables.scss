@@ -1,17 +1,3 @@
-// Regular font family
-// $text-font-stack: 'Open Sans',
-// 'Helvetica Neue Light',
-// 'Helvetica Neue',
-// 'Helvetica',
-// 'Arial',
-// sans-serif !default;
-
-// $code-font-stack: 'Courier New',
-// 'DejaVu Sans Mono',
-// 'Bitstream Vera Sans Mono',
-// 'Monaco',
-// monospace !default;
-
 // Spacing
 $base-spacing: 1rem;
 
@@ -28,14 +14,14 @@ $color-red: #841313;
 $color-pink: #dfb3b3;
 $color-off-white: #EEE9E4;
 $color-light-blue: #7f99b3;
-$light-grey: #ededed !default;
+$light-grey: #ededed;
+$dark-grey: #333;
 
 // Colors Base
 $base__accent-color: $color-blue;
 $secondary__accent-color: $color-red;
 $base__font-color: desaturate(darken($base__accent-color, 30%), 50%);
 $base__background-color: $color-off-white;
-// $base__alert-color: mix($base__accent-color, $color-red, 50%);
 
 // Transition Settings
 $base-transition-duration: .3s;

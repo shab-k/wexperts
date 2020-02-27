@@ -1,17 +1,15 @@
 button,
 .btn {
 	display: inline-block;
-	// vertical-align: middle;
 	width: auto;
 	padding: 0.75rem 1.5rem;
 	margin: 0 0 $base-spacing;
 	color: $color-off-white;
 	font-weight: bold;
-	// white-space: nowrap;
 	transition: all $base-transition-duration $base-transition-timing;
 	cursor: pointer;
     border-radius: $base__border-radius;
-    border: 3px solid #333;
+    border: 3px solid $dark-grey;
 	box-shadow: $base__box-shadow;
 }
 btn:hover,
@@ -66,7 +64,6 @@ btn:focus {
 	&:hover,
 	&:focus {
 		background-color: $color-off-white;
-		// color: $base__accent-color;
     }
     &:hover a {
         color: $base__accent-color;
