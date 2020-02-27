@@ -14,31 +14,34 @@
 	<div class="menu-btn">
 		<i class="fas fa-bars fa-2x"></i>
 	</div>
-	<nav class="main-nav">
-		<img src="/dist/images/logo.JPG" alt="Wexperts Logo" class="logo">
+	<ul class="skip-links">
+		<!-- <li><a href="#nav">Skip to navigation</a></li> -->
+		<li><a href="#main">Skip to the main content</a></li>
+   </ul>
+	<nav id="nav" class="main-nav">
+		<img src="/dist/images/logo.JPG" alt="wexperts logo" class="logo">
 		<ul class="main-menu">
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Contact Us</a></li>
+			<li><a href="#main">Services</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#contact">Contact Us</a></li>
 		</ul>
 	</nav>
 	<!-- Media Objects -->
-	<section class="media-objects">
+	<section id="main" class="media-objects">
 		<h1 class="media__list--title">Need Consulting With Experts?</h1>
 		<ul class="media__list">
 			<!-- Media Object -->
 			<li>
 				<article class="media media--object">
 					<div class="media__item">
-						<img src="/dist/images/team_presentation.png" alt="online_presentation">
+						<img src="/dist/images/team_presentation.png" alt="team presentation">
 					</div>
 					<div class="media__body">
 						<h2 class="media__body--title">Media Object</h2>
 						<p class="media__body--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
 							tempore!</p>
-						<button class="btn--secondary-outline"><a href="" class="media__body--link">Read
-								More</a></button>
+						<button class="btn--secondary-outline"><a href="" class="media__body--link" aria-label="Read more about how we make you ready for public speaking">Read More</a></button>
 					</div>
 				</article>
 			</li>
@@ -46,13 +49,13 @@
 			<li>
 				<article class="media media--object">
 					<div class="media__item media__item--reversed">
-						<img src="/dist/images/problem_solving.png" alt="">
+						<img src="/dist/images/problem_solving.png" alt="problem solving">
 					</div>
 					<div class="media__body media__body--reversed">
 						<h2 class="media__body--title">Reversed Media Object</h2>
 						<p class="media__body--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 							Temporibus, officia.</p>
-						<button class="btn--secondary"><a href="" class="media__body--link">Read More</a></button>
+						<button class="btn--secondary"><a href="" class="media__body--link" aria-label="Read more about our problem solving consultation">Read More</a></button>
 					</div>
 				</article>
 			</li>
@@ -60,20 +63,19 @@
 			<li>
 				<article class="media media--object">
 					<div class="media__item">
-						<img src="/dist/images/brainstorming_.png" alt="">
+						<img src="/dist/images/brainstorming_.png" alt="brainstorming">
 					</div>
 					<div class="media__body">
 						<h2 class="media__body--title">Media Object</h2>
 						<p class="media__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
 							laborum!</p>
-						<button class="btn--secondary-outline"><a href="" class="media__body--link">Read
-								More</a></button>
+						<button class="btn--secondary-outline"><a href="" class="media__body--link" aria-label="Read more about our brainstorming sessions">Read More</a></button>
 					</div>
 				</article>
 			</li>
 		</ul>
 	</section>
-	<section class="about">
+	<section id="about" class="about">
 		<div class="section__about">
 			<article class="section__about--article-one">
 				<h2>Our Perspective</h2>
@@ -93,7 +95,7 @@
 
 		</div>
 	</section>
-	<section class="contact">
+	<section id="contact" class="contact">
 		<h2>Get In Touch</h2>
 		<form>
 			<label for="name">Name:</label>
@@ -105,22 +107,21 @@
 			<button class="submit btn--dark">Send</button>
 		</form>
 	</section>
-	<!-- </div> -->
 	<footer>
 			<ul class="footer__links">
-				<li><a href="#">Contact WExperts</a></li>
+				<li><a href="#">Policy</a></li>
 				<li><a href="#">FAQs</a></li>
 				<li><a href="#">Join Us</a></li>
-				<li><a href="#">&copy; Copyright 2020</a></li>
+				<li>&copy; Copyright 2020</li>
 			</ul>
 			<ul class="footer__social-icons">
 				<li><i class="fab fa-linkedin fa-2x"></i></li>
 				<li><i class="fab fa-facebook fa-2x"></i></li>
+				<li><a href="#nav"><i class="fas fa-arrow-circle-up fa-2x"></i></li></a>
 			</ul>
 	</footer>
 	<script>
-		document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList
-			.toggle('show'));
+		document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
 	</script>
 </body>
 

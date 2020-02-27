@@ -48,7 +48,10 @@ html {
   .media {
     margin: 0 0 $base-spacing*2;
   }
-
+  .media__item {
+    width: 100%;
+    margin: 0 auto;
+  } 
   .media__body {
     margin: 50px 0;
   }

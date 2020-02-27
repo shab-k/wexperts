@@ -393,6 +393,26 @@ btn:focus {
   margin: 0 100px 0 0;
 }
 
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5em 0.75em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 .section__about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,6 +535,10 @@ html {
   }
   .media {
     margin: 0 0 2rem;
+  }
+  .media__item {
+    width: 100%;
+    margin: 0 auto;
   }
   .media__body {
     margin: 50px 0;
